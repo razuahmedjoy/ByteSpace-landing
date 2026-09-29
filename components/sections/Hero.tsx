@@ -43,16 +43,16 @@ export function Hero() {
 
       <Container className="relative z-10 flex flex-col items-center gap-10 pt-8 text-center lg:gap-[60px] lg:pt-[49px]">
         <div className="flex flex-col items-center gap-6 lg:gap-8">
-          <h1 className="max-w-[935px] font-display text-[40px] leading-[1.2] font-semibold tracking-heading text-white sm:text-[56px] lg:text-[72px]">
+          <h1 className="max-w-233.75 font-display text-[40px] leading-[1.2] font-semibold tracking-heading text-white sm:text-[56px] lg:text-[72px]">
             Get Access to Hundreds Courses Available
           </h1>
-          <p className="max-w-[820px] text-base leading-[1.6] text-line-soft sm:text-lg">
+          <p className="max-w-205 text-base leading-[1.6] text-line-soft sm:text-lg">
             Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.
           </p>
         </div>
 
-        <Form action="/" scroll={false} className="flex w-full max-w-[562px] flex-col gap-3 sm:flex-row sm:gap-4">
-          <label className="flex h-[52px] w-full items-center gap-2 rounded-3xl bg-white px-6 focus-within:ring-2 focus-within:ring-lime">
+        <Form action="/" scroll={false} className="flex w-full max-w-140.5 flex-col gap-3 sm:flex-row sm:gap-4">
+          <label className="flex h-13 w-full items-center gap-2 rounded-3xl bg-white px-6 focus-within:ring-2 focus-within:ring-lime">
             <SearchIcon className="shrink-0 text-muted" />
             <span className="sr-only">Search courses</span>
             <input
@@ -75,7 +75,7 @@ export function Hero() {
 function HeroScene() {
   return (
     <div className="mt-6 flex justify-center lg:mt-0">
-      <div className="relative h-[512px] w-[1440px] shrink-0 max-sm:[zoom:0.45] sm:max-lg:[zoom:0.75]">
+      <div className="relative h-128 w-360 shrink-0 max-sm:zoom-[0.45] sm:max-lg:zoom-[0.75]">
         <Image
           src="/decor/hero-ring.svg"
           alt=""
