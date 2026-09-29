@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Design tokens pulled from the ByteSpace Figma file. */
+@theme {
+  --color-primary: #003be2; /* Persian Blue/800 */
+  --color-lime: #d4fb20; /* Electric Lime/400 */
+  --color-lime-500: #cbfc01; /* Electric Lime/500 */
+
+  --color-ink: #242528; /* Shuttle Gray/950 */
+  --color-ink-800: #424348; /* Shuttle Gray/800 */
+  --color-heading: #040819;
+  --color-body: #4b4c53; /* Shuttle Gray/700 */
+  --color-muted: #82868e; /* Shuttle Gray/400 */
+  --color-line: #ced0d3; /* Shuttle Gray/200 */
+  --color-line-soft: #e5e6e8; /* Shuttle Gray/100 */
+  --color-surface: #f5f5f6; /* Shuttle Gray/50 */
+  --color-track: #f6f6f6;
+  --color-canvas: #fafafa;
+  --color-gray-700: #4f4f4f; /* Black/700 */
+  --color-gray-400: #888888; /* Black/400 */
+  --color-gray-200: #d1d1d1; /* Black/200 */
+
+  --font-sans: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-brand: var(--font-clash), var(--font-poppins), sans-serif;
+
+  /* Figma uses -1% letter spacing on every Poppins heading. */
+  --tracking-heading: -0.01em;
+}
+
+/*
+ * Figma's layered "A" shadow on the cut-out photos. It follows the image alpha,
+ * so it's a drop-shadow filter rather than a box-shadow (drop-shadow blur ≈ half the Figma radius).
+ */
+@utility drop-shadow-float {
+  filter: drop-shadow(51px 73px 36px rgb(0 0 0 / 0.13)) drop-shadow(26px 37px 18px rgb(0 0 0 / 0.1))
+    drop-shadow(10px 15px 8px rgb(0 0 0 / 0.08)) drop-shadow(2px 3px 3px rgb(0 0 0 / 0.06));
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+}
