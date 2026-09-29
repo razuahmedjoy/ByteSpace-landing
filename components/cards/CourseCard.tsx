@@ -27,7 +27,7 @@ export function CourseCard({
     <article
       className={cn(
         "group flex w-full max-w-[373px] flex-col gap-5 rounded-3xl border border-line bg-white p-[15px] pb-6",
-        interactive && "transition hover:-translate-y-1 hover:shadow-lg",
+        interactive && "cursor-pointer transition hover:-translate-y-1 hover:shadow-lg",
         className,
       )}
     >
